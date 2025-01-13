@@ -1,227 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>Your Name - Portfolio</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
 </head>
-<body id="page-top" class="politics_version">
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1>John Doe</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- LOADER -->
-    <div id="preloader">
-        <div id="main-ld">
-            <div id="loader"></div>  
-        </div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img class="img-fluid" src="images/logo.png" alt="" />
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
-        <div class="heading">
-            <h1>Your Name Here</h1>
-            <p>Your tagline or brief description</p>
-            <h3 class="cd-headline clip is-full-width">
-                <span>I am a </span>
-                <span class="cd-words-wrapper">
-                    <b class="is-visible">Developer</b>
-                    <b>Designer</b>
-                    <b>Freelancer</b>
-                </span>
-            </h3>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Full Stack Developer | UI/UX Designer</p>
         </div>
     </section>
 
-    <div id="about" class="section wb">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                        <h2>About Me</h2>
-                        <p>Your bio goes here</p>
-                        <a href="#" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
-                    </div>
+            <h2>About Me</h2>
+            <p>I'm a passionate developer with experience in creating modern web applications. I specialize in front-end and back-end development.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Web Development</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
-                    </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>UI/UX Design</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Mobile App</p>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="services" class="section lb">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title text-left">
-                <h3>Services</h3>
-                <p>What I can do for you</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon">
-                            <i class="flaticon-seo"></i>
-                        </div>
-                        <h2>Service 1</h2>
-                        <p>Service description</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon">
-                            <i class="flaticon-development"></i>
-                        </div>
-                        <h2>Service 2</h2>
-                        <p>Service description</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon">
-                            <i class="flaticon-process"></i>
-                        </div>
-                        <h2>Service 3</h2>
-                        <p>Service description</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
-    </div>
+    </section>
 
-    <div id="portfolio" class="section lb">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-            <div class="section-title text-left">
-                <h3>Portfolio</h3>
-                <p>My recent work</p>
-            </div>
-            
-            <div class="gallery-list row">
-                <div class="col-md-4 col-sm-6 gallery-grid">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Add more portfolio items as needed -->
-                
-            </div>
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
-    </div>
-
-    <div id="contact" class="section db">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Contact</h3>
-                <p>Get in touch</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contact_form">
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" type="text" placeholder="Your Name" required="required">
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" type="email" placeholder="Your Email" required="required">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="message" placeholder="Your Message" required="required"></textarea>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <button class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-company-name">All Rights Reserved. &copy; <script>document.write(new Date().getFullYear())</script></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <script src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script> 
-    <script src="js/parallaxie.js"></script>
-    <script src="js/headline.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
-
+    </footer>
 </body>
 </html>
